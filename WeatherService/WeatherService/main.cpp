@@ -1,9 +1,9 @@
-#include "JsonService.h"
+#include "XmlService.h"
 
 int main() {
 	setlocale(LC_ALL, "ru");
-	JsonService js;
-	Weather w = js.getWeather("weather.json");
+	XmlService xs;
+	Weather w = xs.getWeather("weather.xml");
 	w.WeatherOut();
 	return 0;
 }
